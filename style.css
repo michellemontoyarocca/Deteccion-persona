@@ -1,0 +1,15 @@
+body { margin:0; font-family: system-ui, Arial; background:#0b1220; color:#e8eefc; }
+.wrap { max-width:1100px; margin:0 auto; padding:20px; }
+header { margin-bottom:16px; }
+.grid { display:grid; grid-template-columns: 2fr 1fr; gap:16px; }
+.card { background: rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12); border-radius:16px; padding:16px; backdrop-filter: blur(10px); }
+.stage { position:relative; border-radius:16px; overflow:hidden; background:#000; aspect-ratio: 16/9; }
+video, canvas { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.hud { display:flex; justify-content:space-between; margin-top:10px; opacity:0.9; }
+button { width:100%; padding:12px; margin-bottom:10px; border-radius:12px; border:0; font-weight:700; }
+#start { background:#2ecc71; }
+#stop { background:#e74c3c; }
+label { display:block; margin-top:10px; }
+input { width:100%; padding:10px; border-radius:10px; border:1px solid rgba(255,255,255,0.2); background:#0f1a2f; color:#fff; }
+pre { height:260px; overflow:auto; background:#060b16; border-radius:12px; padding:12px; border:1px solid rgba(255,255,255,0.08); }
+@media (max-width: 900px){ .grid{ grid-template-columns: 1fr; } }

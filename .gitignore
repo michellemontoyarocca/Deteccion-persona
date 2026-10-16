@@ -1,0 +1,4 @@
+captures/
+*.zip
+.env
+*-qa.png

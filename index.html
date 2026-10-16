@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Visión por cámara · prototipo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Explorador de cámara</h1>
+      <p>Demo local de interfaz para visión por computadora. El recuadro es ilustrativo: esta versión no detecta personas ni celulares y no envía imágenes.</p>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <div class="stage">
+          <video id="cam" autoplay playsinline muted></video>
+          <canvas id="overlay"></canvas>
+        </div>
+        <div class="hud">
+          <span id="status">Estado: listo</span>
+          <span id="tab">Pestaña: visible</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <button id="start">Iniciar</button>
+        <button id="stop" disabled>Detener</button>
+
+        <label>
+          Intervalo entre ejemplos (seg):
+          <input id="cooldown" type="number" min="2" value="8" />
+        </label>
+
+        <pre id="log"></pre>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
